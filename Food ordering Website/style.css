@@ -2,22 +2,45 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background:lightgreen;
+    background-color: chartreuse;
     font-family: comic sans-serif;
     text-align: center;
 }
-h1{
+.food{
+    color: tomato;
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
+    text-align: left;
 }
-h2{
+.sticky{
+    background-color:white;
+    height: 50px;
+    width: 170px;
+    position: fixed;
+    left: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+.heading{
     background: linear-gradient(45deg,red,black,red);
     color: white;
     padding: 15px;
-    border-radius: 50%;
-    width: 800px;
+    border-radius: 40px;
+    width: 400px;
     margin: auto;
     box-shadow: 0 0 10px;
+}
+.menu{
+    background: linear-gradient(45deg,rgb(158, 48, 177),rgb(228, 53, 22),rgb(10, 168, 203));
+    color: white;
+    padding: 15px;
+    border-radius: 40px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 0 0 10px;
+
 }
 table{
     width: 100%;
@@ -27,3 +50,12 @@ img{
     border-radius: 10px;
     box-shadow: 0 0 10px black;
 }
+.tabs{
+    font-size: 26px;
+    /* padding-left: 200px; */
+}
+.photos{
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}}
