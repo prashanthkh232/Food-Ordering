@@ -1,2 +1,2 @@
 # Food-Ordering
-website using HTML,CSS,JavaScript
+website using HTML,CSS,JavaScript.
