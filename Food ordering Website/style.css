@@ -1,0 +1,29 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:lightgreen;
+    font-family: comic sans-serif;
+    text-align: center;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+h2{
+    background: linear-gradient(45deg,red,black,red);
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    width: 800px;
+    margin: auto;
+    box-shadow: 0 0 10px;
+}
+table{
+    width: 100%;
+
+}
+img{
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
