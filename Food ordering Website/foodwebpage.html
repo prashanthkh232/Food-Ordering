@@ -9,114 +9,139 @@
     <title>foodwebpage</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="D:\web page\food icon.jpg">
+    <script src="./main.js"></script>
 </head>
 <body>
-
-    <div align="center">
-        <a href="#Home">Home</a> |
-        <a href="#Burger">Burger</a> |
-        <a href="#Fries">Fries</a> |
-        <a href="#Greens">Greens</a> |
-        <a href="#Noodles">Noodles</a> |
-        <a href="#Deserts">Deserts</a> |
-
+    <div style="display:flex; justify-content: space-evenly;position: relative;">
+        <div class="tabs">
+            <a href="#Home">Home</a> |
+            <a href="#Burger">Burger</a> |
+            <a href="#Fries">Fries</a> |
+            <a href="#Greens">Greens</a> |
+            <a href="#Noodles">Noodles</a> |
+            <a href="#Deserts">Deserts</a> |
+        </div>
+        <div >
+            <BUtton class="sticky">
+                <div id="item">0 item | Rs.0</div>
+                <div>VIEW CART</div>
+            </BUtton>
+        </div>
     </div>
     <div id="Home">
-        <br>
-        <h1 style="color:RED;">
-            FOODS
-        </h1>
-        <h2>
+       <br>
+        <h2 class="menu">
             Welcome to Food World
         </h2>
-        <p>
-            Food is any substance consumed to provide nutritional support and energy to an organism. It can be raw, processed or formulated and is consumed orally by animals for growth, health or pleasure. Food is mainly composed of water, lipids, proteins and carbohydrates.
-        </p>
+        <br>
         <table>
             <tr>
                 <td>
-                    <img src="Assets/download (1).jpg" alt="" width="400" height="300">
+                    <img src="./Assets/menu1.jpg" alt="" width="600" height="300">
                 </td>
-                <td>
-                    <img src="Assets/download (2).jpg" alt="" width="400" height="300">
-                </td>
+              
             </tr>
             <tr>
-                <td>uqwhf.eah</td>
-                <td>uhscliovhsldvihs</td>
+                <td>MENU</td>
             </tr>
         </table>
-        <p>Food is any substance consumed to provide nutritional support and energy to an organism. It can be raw, processed or formulated and is consumed orally by animals for growth, health or pleasure. Food is mainly composed of water, lipids, proteins and carbohydrates.
-        </p>
+        
     </div>
    
-     <div id="Burgers">
+    <div id="Burger">
         <br>
         <br>
-        <h2>Burger collection</h2>
-        <p>
-            Food is any substance consumed to provide nutritional support and energy to an organism. It can be raw, processed or formulated and is consumed orally by animals for growth, health or pleasure. Food is mainly composed of water, lipids, proteins and carbohydrates.
-        </p>
-        <table>
-            <tr>
-                <td>
-                    <img src="Assets/download (1).jpg" alt="" width="300" height="200">
-                </td>
-                <td>
-                    <img src="Assets/download (1).jpg" alt="" width="300" height="200">
-                </td>
-                <td>
-                    <img src="Assets/download (1).jpg" alt="" width="300" height="200">
-                </td>
-                <td>
-                    <img src="Assets/download (1).jpg" alt="" width="300" height="200">
-                </td>
-            </tr>
-            <tr>
-                <td>Burger 1</td>
-                <td>Burger 2</td>
-                <td>Burger 3</td>
-                <td>Burger 4</td>
-            </tr>
-        </table>
+        <h2 class="heading">Burger collection</h2>
+        <br>
+        <div class="photos">
+        <div>
+            <div>Burger1</div><br>
+            <div>            
+                <button><img src="./Assets/burger1.jpg" alt="" width="280px" height="200px"></button>
+            </div><br>
+            <div>
+                <span><button onclick="minus(1,'bur')"> - </button></span>&nbsp;<span id="burger1">0</span>&nbsp;<span><button onclick="add(1,'bur')"> +</button></span>
+            </div>
+        </div>
+        <div>
+            <div>Burger2</div><br>
+            <div>            
+                <button><img src="./Assets/burger2.jpg" alt="" width="280px" height="200px"></button>
+            </div><br>
+            <div>
+                <span><button onclick="minus(2,'bur')"> - </button></span>&nbsp;<span id="burger2">0</span>&nbsp;<span><button onclick="add(2,'bur')"> +</button></span>
+            </div>
+        </div>
+        <div>
+            <div>Burger3</div><br>
+            <div>            
+                <button><img src="./Assets/burger3.jpg" alt="" width="280px" height="200px"></button>
+            </div><br>
+            <div>
+                <span><button onclick="minus(3,'bur')"> - </button></span>&nbsp;<span id="burger3">0</span>&nbsp;<span><button onclick="add(3,'bur')"> +</button></span>
+            </div>
+        </div>
+        <div>
+            <div>Burger4</div><br>
+            <div>            
+                <button><img src="./Assets/burger4.jpg" alt="" width="280px" height="200px"></button>
+            </div><br>
+            <div>
+                <span><button onclick="minus(4,'bur')"> - </button></span>&nbsp;<span id="burger4">0</span>&nbsp;<span><button onclick="add(4,'bur')"> +</button></span>
+            </div>
+        </div>
     </div>
+        </div>
     <div id="Fries">
         <br>
         <br>
-        <h2>Fries collection</h2>
-        <p>
-            Food is any substance consumed to provide nutritional support and energy to an organism. It can be raw, processed or formulated and is consumed orally by animals for growth, health or pleasure. Food is mainly composed of water, lipids, proteins and carbohydrates.
-        </p>
-        <table>
-            <tr>
-                <td>
-                    <img src="Assets/download (1).jpg" alt="" width="300" height="200">
-                </td>
-                <td>
-                    <img src="Assets/download (1).jpg" alt="" width="300" height="200">
-                </td>
-                <td>
-                    <img src="Assets/download (1).jpg" alt="" width="300" height="200">
-                </td>
-                <td>
-                    <img src="Assets/download (1).jpg" alt="" width="300" height="200">
-                </td>
-            </tr>
-            <tr>
-                <td>Fries 1</td>
-                <td>Fries 2</td>
-                <td>Fries 3</td>
-                <td>Fries 4</td>
-            </tr>
-        </table>
+        <h2 class="heading">Fries collection</h2>
+        <br>
+        <div class="photos">
+            <div>
+                <div>Fries1</div><br>
+                <div>            
+                    <button><img src="./Assets/fries1.jpg" alt="" width="280px" height="200px"></button>
+                </div><br>
+                <div>
+                    <span><button onclick="minus(1,'fr')"> - </button></span>&nbsp;<span id="fr1">0</span>&nbsp;<span><button onclick="add(1,'fr')"> +</button></span>
+                </div>
+            </div>
+            <div>
+                <div>Fries2</div><br>
+                <div>            
+                    <button><img src="./Assets/fries2.jpg" alt="" width="280px" height="200px"></button>
+                </div><br>
+                <div>
+                    <span><button onclick="minus(2,'fr')"> - </button></span>&nbsp;<span id="fr2">0</span>&nbsp;<span><button onclick="add(2,'fr')"> +</button></span>
+                </div>
+            </div>
+            <div>
+                <div>Fries3</div><br>
+                <div>            
+                    <button><img src="./Assets/fries3.jpg" alt="" width="280px" height="200px"></button>
+                </div><br>
+                <div>
+                    <span><button onclick="minus(3,'fr')"> - </button></span>&nbsp;<span id="fr3">0</span>&nbsp;<span><button onclick="add(3,'fr')"> +</button></span>
+                </div>
+            </div>
+            <div>
+                <div>Fries4</div><br>
+                <div>            
+                    <button><img src="./Assets/fries4.jpg" alt="" width="280px" height="200px"></button>
+                </div><br>
+                <div>
+                    <span><button onclick="minus(4,'fr')"> - </button></span>&nbsp;<span id="fr4">0</span>&nbsp;<span><button onclick="add(4,'fr')"> +</button></span>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="Greens">
         <br>
         <br>
-        <h2>Greens collection</h2>
-        <p>
-            Food is any substance consumed to provide nutritional support and energy to an organism. It can be raw, processed or formulated and is consumed orally by animals for growth, health or pleasure. Food is mainly composed of water, lipids, proteins and carbohydrates.
-        </p>
+        <h2 class="heading">Greens collection</h2>
+        <br>
+      
         <table>
             <tr>
                 <td>
@@ -143,10 +168,9 @@
     <div id="Noodles">
         <br>
         <br>
-        <h2>Noodles collection</h2>
-        <p>
-            Food is any substance consumed to provide nutritional support and energy to an organism. It can be raw, processed or formulated and is consumed orally by animals for growth, health or pleasure. Food is mainly composed of water, lipids, proteins and carbohydrates.
-        </p>
+        <h2 class="heading">Noodles collection</h2>
+        <br>
+     
         <table>
             <tr>
                 <td>
@@ -173,10 +197,9 @@
     <div id="Deserts">
         <br>
         <br>
-        <h2>Deserts collection</h2>
-        <p>
-            Food is any substance consumed to provide nutritional support and energy to an organism. It can be raw, processed or formulated and is consumed orally by animals for growth, health or pleasure. Food is mainly composed of water, lipids, proteins and carbohydrates.
-        </p>
+        <h2 class="heading">Deserts collection</h2>
+        <br>
+   
         <table>
             <tr>
                 <td>
@@ -201,12 +224,12 @@
         </table>
     </div>
     <div id="footer">
-        <h2>Copyright &copy;2022 , FOODS</h2>
+        <h2 class="heading">Copyright &copy;2022 , FOODS</h2>
         <p>All Rights Reserved</p>
         <P>Developed & Maintained by prashanth</P>
 
     </div>
-    <div align="center">
+    <div class="tabs">
         <a href="#Home">Home</a> |
         <a href="#Burger">Burger</a> |
         <a href="#Fries">Fries</a> |
