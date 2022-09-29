@@ -14,6 +14,10 @@ var nd1=0
 var nd2=0
 var nd3=0
 var nd4=0
+var de1=0
+var de2=0
+var de3=0
+var de4=0
 var item=0
 amt=0
 function minus(a,b){
@@ -102,9 +106,30 @@ function minus(a,b){
             amt=amt-80
             document.getElementById('nd4').innerHTML = nd4
             }
+    }else if (b=='de'){
+        if ((a==1) &&  (de1>0)){
+            de1--
+            amt=amt-20
+            document.getElementById('de1').innerHTML = de1
+        }
+        if ((a==2) && (de2>0)){
+            de2--
+            amt=amt-40
+            document.getElementById('de2').innerHTML = de2
+             }
+        if ((a==3) && (de3>0)){
+            de3--
+            amt=amt-60
+            document.getElementById('de3').innerHTML = de3
+            }
+        if ((a==4) && (de4>0)){
+            de4--
+            amt=amt-80
+            document.getElementById('de4').innerHTML = de4
+            }
     }
     
-    item=burger1+burger2+burger3+burger4+fr1+fr2+fr3+fr4+pz1+pz2+pz3+pz4+nd1+nd2+nd3+nd4
+    item=burger1+burger2+burger3+burger4+fr1+fr2+fr3+fr4+pz1+pz2+pz3+pz4+nd1+nd2+nd3+nd4+de1+de2+de3+de4
     document.getElementById('item').innerHTML = item + ' item | Rs.'+amt
 }
 function add(b,c){
@@ -173,7 +198,6 @@ function add(b,c){
             document.getElementById('nd4').innerHTML = nd4
              }
 
-    }
     }else if (c=='pz'){
         if (b==1){
             pz1++
@@ -195,8 +219,29 @@ function add(b,c){
             amt=amt+80
             document.getElementById('pz4').innerHTML = pz4
              }
+    }else if (c=='de'){
+        if (b==1){
+            de1++
+            amt=amt+20
+            document.getElementById('de1').innerHTML = de1
+             }
+        if (b==2){
+            de2++
+            amt=amt+40
+            document.getElementById('de2').innerHTML = de2
+             }
+        if (b==3){
+            de3++
+            amt=amt+60
+            document.getElementById('de3').innerHTML = de3
+             }
+        if (b==4){
+            de4++
+            amt=amt+80
+            document.getElementById('de4').innerHTML = de4
+             }
     }
-    item=burger1+burger2+burger3+burger4+fr1+fr2+fr3+fr4+pz1+pz2+pz3+pz4+nd1+nd2+nd3+nd4
+    item=burger1+burger2+burger3+burger4+fr1+fr2+fr3+fr4+pz1+pz2+pz3+pz4+nd1+nd2+nd3+nd4+de1+de2+de3+de4
 
     document.getElementById('item').innerHTML = item + ' item | Rs.'+amt
 }
