@@ -19,7 +19,7 @@ var de2=0
 var de3=0
 var de4=0
 var item=0
-amt=0
+var amt=0
 function minus(a,b){
 
     if (b=='bur'){
@@ -130,7 +130,69 @@ function minus(a,b){
     }
     
     item=burger1+burger2+burger3+burger4+fr1+fr2+fr3+fr4+pz1+pz2+pz3+pz4+nd1+nd2+nd3+nd4+de1+de2+de3+de4
+    if (item>0){
+        var x=document.getElementById('cart')
+        x.innerHTML=`<button onclick='price()' class="sticky" > <div id="item">0 item | Rs.0</div> <div>VIEW CART</div></button>`
+        document.getElementById('item').innerHTML = item + ' item | Rs.'+amt
+    }else{
+        var x=document.getElementById('cart')
+        x.innerHTML = ''
+    }
+}
+function price(){
+    var p=0
+    var i=1
+    cart=document.getElementById('cart')
+    cart.innerHTML = ''
+    var hh=document.getElementById('maincart')
+    let ma= document.createElement("div")
+    ma.setAttribute('id','cartbox')
+    ma.innerHTML = `<div class='deletecart'><button onclick="deletecart()">X</button></div><table id='table'>
+    <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Amount</th>
+    </tr>
+</table>`
+    hh.appendChild(ma)
+    console.log(ma);
+    arr=['burger','fr','pz','nd','de']
+    for (k of arr){
+        var j=1
+        for(;j<5;j++){
+            var n=`${k}${j}`
+            var m=eval(`${k}${j}`)
+            append(n,m)
+            if ((k=='de') &&(j==4 )){
+                totalfun()
+            }
+        }
+    }
+}
+function deletecart(){
+    var hh=document.getElementById('maincart')
+    hh.innerHTML =''
+    var x=document.getElementById('cart')
+    x.innerHTML=`<button onclick='price()' class="sticky" > <div id="item">0 item | Rs.0</div> <div>VIEW CART</div></BUtton>`
     document.getElementById('item').innerHTML = item + ' item | Rs.'+amt
+}
+function totalfun(){
+    let mainDiv = document.createElement("tr")
+    mainDiv.innerHTML =`<td colspan='3'>Total Amount</td> <td>${amt}</td>`
+    tb=document.getElementById('table')
+    tb.appendChild(mainDiv)
+}
+function append(n,m){
+    if((m)>0){
+        let y=n.slice((n.length)-1)
+        if (y==1){p=20}else if(y==2){p=40}else if(y==3){p=60}else(p=80)
+            let mainDiv = document.createElement("tr")
+            var c=m*p
+            mainDiv.innerHTML =`<td>${n}</td> <td>${m}</td><td>${p}</td><td>${c}</td>`
+            tb=document.getElementById('table')
+            tb.appendChild(mainDiv)
+        }
 }
 function add(b,c){
     if (c=='bur'){
@@ -197,8 +259,8 @@ function add(b,c){
             amt=amt+80
             document.getElementById('nd4').innerHTML = nd4
              }
-    }
-    else if (c=='pz'){
+
+    }else if (c=='pz'){
         if (b==1){
             pz1++
             amt=amt+20
@@ -242,6 +304,9 @@ function add(b,c){
              }
     }
     item=burger1+burger2+burger3+burger4+fr1+fr2+fr3+fr4+pz1+pz2+pz3+pz4+nd1+nd2+nd3+nd4+de1+de2+de3+de4
-
-    document.getElementById('item').innerHTML = item + ' item | Rs.'+amt
+    if (item>0){
+        var x=document.getElementById('cart')
+        x.innerHTML=`<button onclick='price()' class="sticky"> <div id="item">0 item | Rs.0</div> <div>VIEW CART</div></button>`
+        document.getElementById('item').innerHTML = item + ' item | Rs.'+amt
+    }
 }

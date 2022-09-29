@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: chartreuse;
+    background-color: darkkhaki;
     font-family: comic sans-serif;
     text-align: center;
 }
@@ -22,6 +22,23 @@ body{
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
+    border-radius: 10px;
+}
+.cart{
+    border-radius: 10px;
+}
+#cartbox{
+    width: 600px;
+    height: 400px;
+    border: 2px solid rebeccapurple;
+    border-radius: 10px;
+    background-color: aquamarine;
+    position: fixed;
+    left: 25%;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .heading{
     background: linear-gradient(45deg,red,black,red);
@@ -42,9 +59,24 @@ body{
     box-shadow: 0 0 10px;
 
 }
-table{
+.ttt{
     width: 100%;
-
+}
+#table{
+    width: 80%;
+    height: 80%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+#table>tr>td,th{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.deletecart{
+    position:fixed;
+    left: 70%;
+    top: 11%;
 }
 img{
     border-radius: 10px;
@@ -58,4 +90,4 @@ img{
     border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
-}}
+}
