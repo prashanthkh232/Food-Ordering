@@ -125,7 +125,28 @@ function add(b,c){
             amt=amt+80
             document.getElementById('fr4').innerHTML = fr4
              }
+    }else if (c=='pz'){
+        if (b==1){
+            pz1++
+            amt=amt+20
+            document.getElementById('pz1').innerHTML = pz1
+             }
+        if (b==2){
+            pz2++
+            amt=amt+40
+            document.getElementById('pz2').innerHTML = pz2
+             }
+        if (b==3){
+            pz3++
+            amt=amt+60
+            document.getElementById('pz3').innerHTML = pz3
+             }
+        if (b==4){
+            pz4++
+            amt=amt+80
+            document.getElementById('pz4').innerHTML = pz4
+             }
     }
-    item=burger1+burger2+burger3+burger4+fr1+fr2+fr3+fr4
+    item=burger1+burger2+burger3+burger4+fr1+fr2+fr3+fr4+pz1+pz2+pz3+pz4
     document.getElementById('item').innerHTML = item + ' item | Rs.'+amt
 }
