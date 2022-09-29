@@ -174,7 +174,7 @@ function add(b,c){
              }
 
     }
-    }else if (c=='pz'){
+    else if (c=='pz'){
         if (b==1){
             pz1++
             amt=amt+20
