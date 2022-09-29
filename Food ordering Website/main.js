@@ -2,22 +2,22 @@ var burger1=0
 var burger2=0
 var burger3=0
 var burger4=0
-var fr1=0
-var fr2=0
-var fr3=0
-var fr4=0
-var pz1=0
-var pz2=0
-var pz3=0
-var pz4=0
-var nd1=0
-var nd2=0
-var nd3=0
-var nd4=0
-var de1=0
-var de2=0
-var de3=0
-var de4=0
+var fries1=0
+var fries2=0
+var fries3=0
+var fries4=0
+var pizza1=0
+var pizza2=0
+var pizza3=0
+var pizza4=0
+var noodle1=0
+var noodle2=0
+var noodle3=0
+var noodle4=0
+var desert1=0
+var desert2=0
+var desert3=0
+var desert4=0
 var item=0
 var amt=0
 function minus(a,b){
@@ -44,92 +44,92 @@ function minus(a,b){
             document.getElementById('burger4').innerHTML = burger4
             }
     } else if (b=='fr'){
-        if ((a==1) &&  (fr1>0)){
-            fr1--
+        if ((a==1) &&  (fries1>0)){
+            fries1--
             amt=amt-20
-            document.getElementById('fr1').innerHTML = fr1
+            document.getElementById('fries1').innerHTML = fries1
         }
-        if ((a==2) && (fr2>0)){
-            fr2--
+        if ((a==2) && (fries2>0)){
+            fries2--
             amt=amt-40
-            document.getElementById('fr2').innerHTML = fr2
+            document.getElementById('fries2').innerHTML = fries2
              }
-        if ((a==3) && (fr3>0)){
-            fr3--
+        if ((a==3) && (fries3>0)){
+            fries3--
             amt=amt-60
-            document.getElementById('fr3').innerHTML = fr3
+            document.getElementById('fries3').innerHTML = fries3
             }
-        if ((a==4) && (fr4>0)){
-            fr4--
+        if ((a==4) && (fries4>0)){
+            fries4--
             amt=amt-80
-            document.getElementById('fr4').innerHTML = fr4
+            document.getElementById('fries4').innerHTML = fries4
             }
     }else if (b=='pz'){
-        if ((a==1) &&  (pz1>0)){
-            pz1--
+        if ((a==1) &&  (pizza1>0)){
+            pizza1--
             amt=amt-20
-            document.getElementById('pz1').innerHTML = pz1
+            document.getElementById('pizza1').innerHTML = pizza1
         }
-        if ((a==2) && (pz2>0)){
-            pz2--
+        if ((a==2) && (pizza2>0)){
+            pizza2--
             amt=amt-40
-            document.getElementById('pz2').innerHTML = pz2
+            document.getElementById('pizza2').innerHTML = pizza2
              }
-        if ((a==3) && (pz3>0)){
-            pz3--
+        if ((a==3) && (pizza3>0)){
+            pizza3--
             amt=amt-60
-            document.getElementById('pz3').innerHTML = pz3
+            document.getElementById('pizza3').innerHTML = pizza3
             }
-        if ((a==4) && (pz4>0)){
-            pz4--
+        if ((a==4) && (pizza4>0)){
+            pizza4--
             amt=amt-80
-            document.getElementById('pz4').innerHTML = pz4
+            document.getElementById('pizza4').innerHTML = pizza4
             }
     }else if (b=='nd'){
-        if ((a==1) &&  (nd1>0)){
-            nd1--
+        if ((a==1) &&  (noodle1>0)){
+            noodle1--
             amt=amt-20
-            document.getElementById('nd1').innerHTML = nd1
+            document.getElementById('noodle1').innerHTML = noodle1
         }
-        if ((a==2) && (nd2>0)){
-            nd2--
+        if ((a==2) && (noodle2>0)){
+            noodle2--
             amt=amt-40
-            document.getElementById('nd2').innerHTML = nd2
+            document.getElementById('noodle2').innerHTML = noodle2
              }
-        if ((a==3) && (nd3>0)){
-            nd3--
+        if ((a==3) && (noodle3>0)){
+            noodle3--
             amt=amt-60
-            document.getElementById('nd3').innerHTML = nd3
+            document.getElementById('noodle3').innerHTML = noodle3
             }
-        if ((a==4) && (nd4>0)){
-            nd4--
+        if ((a==4) && (noodle4>0)){
+            noodle4--
             amt=amt-80
-            document.getElementById('nd4').innerHTML = nd4
+            document.getElementById('noodle4').innerHTML = noodle4
             }
     }else if (b=='de'){
-        if ((a==1) &&  (de1>0)){
-            de1--
+        if ((a==1) &&  (desert1>0)){
+            desert1--
             amt=amt-20
-            document.getElementById('de1').innerHTML = de1
+            document.getElementById('desert1').innerHTML = desert1
         }
-        if ((a==2) && (de2>0)){
-            de2--
+        if ((a==2) && (desert2>0)){
+            desert2--
             amt=amt-40
-            document.getElementById('de2').innerHTML = de2
+            document.getElementById('desert2').innerHTML = desert2
              }
-        if ((a==3) && (de3>0)){
-            de3--
+        if ((a==3) && (desert3>0)){
+            desert3--
             amt=amt-60
-            document.getElementById('de3').innerHTML = de3
+            document.getElementById('desert3').innerHTML = desert3
             }
-        if ((a==4) && (de4>0)){
-            de4--
+        if ((a==4) && (desert4>0)){
+            desert4--
             amt=amt-80
-            document.getElementById('de4').innerHTML = de4
+            document.getElementById('desert4').innerHTML = desert4
             }
     }
     
-    item=burger1+burger2+burger3+burger4+fr1+fr2+fr3+fr4+pz1+pz2+pz3+pz4+nd1+nd2+nd3+nd4+de1+de2+de3+de4
+    item=burger1+burger2+burger3+burger4+fries1+fries2+fries3+fries4+pizza1+pizza2+pizza3+pizza4+noodle1+noodle2+noodle3+noodle4+desert1+desert2+desert3+desert4
     if (item>0){
         var x=document.getElementById('cart')
         x.innerHTML=`<button onclick='price()' class="sticky" > <div id="item">0 item | Rs.0</div> <div>VIEW CART</div></button>`
@@ -157,14 +157,14 @@ function price(){
 </table>`
     hh.appendChild(ma)
     console.log(ma);
-    arr=['burger','fr','pz','nd','de']
+    arr=['burger','fries','pizza','noodle','desert']
     for (k of arr){
         var j=1
         for(;j<5;j++){
             var n=`${k}${j}`
             var m=eval(`${k}${j}`)
             append(n,m)
-            if ((k=='de') &&(j==4 )){
+            if ((k=='desert') &&(j==4 )){
                 totalfun()
             }
         }
@@ -218,92 +218,92 @@ function add(b,c){
              }
     }else if (c=='fr'){
         if (b==1){
-            fr1++
+            fries1++
             amt=amt+20
-            document.getElementById('fr1').innerHTML = fr1
+            document.getElementById('fries1').innerHTML = fries1
              }
         if (b==2){
-            fr2++
+            fries2++
             amt=amt+40
-            document.getElementById('fr2').innerHTML = fr2
+            document.getElementById('fries2').innerHTML = fries2
              }
         if (b==3){
-            fr3++
+            fries3++
             amt=amt+60
-            document.getElementById('fr3').innerHTML = fr3
+            document.getElementById('fries3').innerHTML = fries3
              }
         if (b==4){
-            fr4++
+            fries4++
             amt=amt+80
-            document.getElementById('fr4').innerHTML = fr4
+            document.getElementById('fries4').innerHTML = fries4
              }
 
     }else if (c=='nd'){
         if (b==1){
-            nd1++
+            noodle1++
             amt=amt+20
-            document.getElementById('nd1').innerHTML = nd1
+            document.getElementById('noodle1').innerHTML = noodle1
              }
         if (b==2){
-            nd2++
+            noodle2++
             amt=amt+40
-            document.getElementById('nd2').innerHTML = nd2
+            document.getElementById('noodle2').innerHTML = noodle2
              }
         if (b==3){
-            nd3++
+            noodle3++
             amt=amt+60
-            document.getElementById('nd3').innerHTML = nd3
+            document.getElementById('noodle3').innerHTML = noodle3
              }
         if (b==4){
-            nd4++
+            noodle4++
             amt=amt+80
-            document.getElementById('nd4').innerHTML = nd4
+            document.getElementById('noodle4').innerHTML = noodle4
              }
 
     }else if (c=='pz'){
         if (b==1){
-            pz1++
+            pizza1++
             amt=amt+20
-            document.getElementById('pz1').innerHTML = pz1
+            document.getElementById('pizza1').innerHTML = pizza1
              }
         if (b==2){
-            pz2++
+            pizza2++
             amt=amt+40
-            document.getElementById('pz2').innerHTML = pz2
+            document.getElementById('pizza2').innerHTML = pizza2
              }
         if (b==3){
-            pz3++
+            pizza3++
             amt=amt+60
-            document.getElementById('pz3').innerHTML = pz3
+            document.getElementById('pizza3').innerHTML = pizza3
              }
         if (b==4){
-            pz4++
+            pizza4++
             amt=amt+80
-            document.getElementById('pz4').innerHTML = pz4
+            document.getElementById('pizza4').innerHTML = pizza4
              }
     }else if (c=='de'){
         if (b==1){
-            de1++
+            desert1++
             amt=amt+20
-            document.getElementById('de1').innerHTML = de1
+            document.getElementById('desert1').innerHTML = desert1
              }
         if (b==2){
-            de2++
+            desert2++
             amt=amt+40
-            document.getElementById('de2').innerHTML = de2
+            document.getElementById('desert2').innerHTML = desert2
              }
         if (b==3){
-            de3++
+            desert3++
             amt=amt+60
-            document.getElementById('de3').innerHTML = de3
+            document.getElementById('desert3').innerHTML = desert3
              }
         if (b==4){
-            de4++
+            desert4++
             amt=amt+80
-            document.getElementById('de4').innerHTML = de4
+            document.getElementById('desert4').innerHTML = desert4
              }
     }
-    item=burger1+burger2+burger3+burger4+fr1+fr2+fr3+fr4+pz1+pz2+pz3+pz4+nd1+nd2+nd3+nd4+de1+de2+de3+de4
+    item=burger1+burger2+burger3+burger4+fries1+fries2+fries3+fries4+pizza1+pizza2+pizza3+pizza4+noodle1+noodle2+noodle3+noodle4+desert1+desert2+desert3+desert4
     if (item>0){
         var x=document.getElementById('cart')
         x.innerHTML=`<button onclick='price()' class="sticky"> <div id="item">0 item | Rs.0</div> <div>VIEW CART</div></button>`
