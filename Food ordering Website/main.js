@@ -10,6 +10,10 @@ var pz1=0
 var pz2=0
 var pz3=0
 var pz4=0
+var nd1=0
+var nd2=0
+var nd3=0
+var nd4=0
 var item=0
 amt=0
 function minus(a,b){
@@ -77,9 +81,30 @@ function minus(a,b){
             amt=amt-80
             document.getElementById('pz4').innerHTML = pz4
             }
+    }else if (b=='nd'){
+        if ((a==1) &&  (nd1>0)){
+            nd1--
+            amt=amt-20
+            document.getElementById('nd1').innerHTML = nd1
+        }
+        if ((a==2) && (nd2>0)){
+            nd2--
+            amt=amt-40
+            document.getElementById('nd2').innerHTML = nd2
+             }
+        if ((a==3) && (nd3>0)){
+            nd3--
+            amt=amt-60
+            document.getElementById('nd3').innerHTML = nd3
+            }
+        if ((a==4) && (nd4>0)){
+            nd4--
+            amt=amt-80
+            document.getElementById('nd4').innerHTML = nd4
+            }
     }
     
-    item=burger1+burger2+burger3+burger4+fr1+fr2+fr3+fr4+pz1+pz2+pz3+pz4
+    item=burger1+burger2+burger3+burger4+fr1+fr2+fr3+fr4+pz1+pz2+pz3+pz4+nd1+nd2+nd3+nd4
     document.getElementById('item').innerHTML = item + ' item | Rs.'+amt
 }
 function add(b,c){
@@ -125,7 +150,30 @@ function add(b,c){
             amt=amt+80
             document.getElementById('fr4').innerHTML = fr4
              }
+
+    }else if (c=='nd'){
+        if (b==1){
+            nd1++
+            amt=amt+20
+            document.getElementById('nd1').innerHTML = nd1
+             }
+        if (b==2){
+            nd2++
+            amt=amt+40
+            document.getElementById('nd2').innerHTML = nd2
+             }
+        if (b==3){
+            nd3++
+            amt=amt+60
+            document.getElementById('nd3').innerHTML = nd3
+             }
+        if (b==4){
+            nd4++
+            amt=amt+80
+            document.getElementById('nd4').innerHTML = nd4
+             }
+
     }
-    item=burger1+burger2+burger3+burger4+fr1+fr2+fr3+fr4
+    item=burger1+burger2+burger3+burger4+fr1+fr2+fr3+fr4+nd1+nd2+nd3+nd4
     document.getElementById('item').innerHTML = item + ' item | Rs.'+amt
 }
