@@ -197,8 +197,8 @@ function add(b,c){
             amt=amt+80
             document.getElementById('nd4').innerHTML = nd4
              }
-
-    }else if (c=='pz'){
+    }
+    else if (c=='pz'){
         if (b==1){
             pz1++
             amt=amt+20
